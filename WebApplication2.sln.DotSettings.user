@@ -1,0 +1,27 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AOpenApiServiceCollectionExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fba408bbefe5c813576b4417369c21d24248b94d040ec72a9753bc546f9308190_003FOpenApiServiceCollectionExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\User\.nuget\packages\swashbuckle.aspnetcore.swagger\7.2.0\lib\net9.0\Swashbuckle.AspNetCore.Swagger.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=11679a0b_002Dbb43_002D4b6a_002Da6ad_002Dbd2fb440efd9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.BookControllerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.RegisterUser_ShouldReturnOk_WhenUserIsRegistered&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.RegisterUser_ShouldReturnBadRequest_WhenUserIsNotRegistered&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.RegisterUser_ShouldReturnBadRequest_WhenUserIsAlreadyRegistered&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.LoginUser_ShouldReturnOk_WhenUserIsLoggedIn&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.LoginUser_ShouldReturnBadRequest_WhenUserIsNotLoggedIn&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.LoginUser_ShouldReturnBadRequest_WhenUserDataIsWrong&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9cc871aa_002D9bc8_002D4a28_002D8813_002D95be3fd1fe1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LoginUser_ShouldReturnBadRequest_WhenUserDataIsWrong #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.BookControllerTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c7139c53_002D7cf1_002D4ef0_002D8070_002D851457978d59/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LoginUser_ShouldReturnBadRequest_WhenUserDataIsWrong" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5BDF587C-4611-4945-8E51-1E1F2B0F4D41::net9.0::WebApi.Test.UserControllerTest.LoginUser_ShouldReturnBadRequest_WhenUserDataIsWrong&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,14 @@
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\bin\Debug\net9.0\DataAccess.deps.json
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\bin\Debug\net9.0\DataAccess.runtimeconfig.json
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\bin\Debug\net9.0\DataAccess.dll
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\bin\Debug\net9.0\DataAccess.pdb
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.AssemblyInfo.cs
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.dll
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\refint\DataAccess.dll
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.pdb
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.genruntimeconfig.cache
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\ref\DataAccess.dll
