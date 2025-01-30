@@ -6,9 +6,6 @@ namespace WebApplication2.controller;
 
 [ApiController]
 [Route("api/book")]
-
-
-
 public class Bookcontroller: ControllerBase, IBookContoller
 {
    private readonly IBookService _bookService;
@@ -30,7 +27,7 @@ public class Bookcontroller: ControllerBase, IBookContoller
 
        return null;
    }
-    [Authorize]
+   
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -49,8 +46,7 @@ public class Bookcontroller: ControllerBase, IBookContoller
             return BadRequest();
         }
     }
-    
-    [Authorize]
+
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -79,7 +75,7 @@ public class Bookcontroller: ControllerBase, IBookContoller
         }
     }
 
-    [Authorize]
+
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -103,7 +99,7 @@ public class Bookcontroller: ControllerBase, IBookContoller
         }
     }
 
-    [Authorize]
+    
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -126,8 +122,7 @@ public class Bookcontroller: ControllerBase, IBookContoller
             return BadRequest();
         }
     }
-    
-    [Authorize]
+
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]

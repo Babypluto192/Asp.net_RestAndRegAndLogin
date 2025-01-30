@@ -5,11 +5,12 @@ namespace WebApplication2.Middleware;
 public class AuthGuardMiddleware
 {
     private readonly RequestDelegate _next;
- 
+    private readonly IServiceScopeFactory _serviceScopeFactory;
 
-    public AuthGuardMiddleware(RequestDelegate next)
+    public AuthGuardMiddleware(RequestDelegate next, IServiceScopeFactory serviceScopeFactory)
     {
         _next = next;
+        _serviceScopeFactory = serviceScopeFactory;
     }
 
     public async Task InvokeAsync(HttpContext context, IServiceProvider serviceProvider)
@@ -22,7 +23,7 @@ public class AuthGuardMiddleware
         }
         context.Request.Headers.TryGetValue("Authorization", out var auth);
         Console.WriteLine(auth.ToString());
-        var authorizationToken = context.Request.Headers["Authorization"].ToString();
+        var authorizationToken = auth.ToString();
       
         if (string.IsNullOrWhiteSpace(authorizationToken) || !authorizationToken.StartsWith("Bearer "))
         {
@@ -35,19 +36,26 @@ public class AuthGuardMiddleware
         
         
         var token = authorizationToken.Substring("Bearer ".Length).Trim();
-        using (var scope = serviceProvider.CreateScope())
+        using (var scope = _serviceScopeFactory.CreateScope())
         {
-            var jwtService = scope.ServiceProvider.GetRequiredService<IJwtService>();
-            var email = await jwtService.ValidateToken(token);
+            var jwtService =  scope.ServiceProvider.GetRequiredService<IJwtService>();
 
+            if (jwtService == null)
+            {
+                context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+                await context.Response.WriteAsync("JWT Service not available.");
+                return;
+            }
+
+            var email = await jwtService.ValidateToken(token);
             if (email == null)
             {
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 await context.Response.WriteAsync("Invalid token.");
                 return;
             }
-            context.Items["UserEmail"] = email;
 
+            context.Items["UserEmail"] = email;
         }
 
         

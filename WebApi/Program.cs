@@ -1,7 +1,7 @@
 
 using DataAccess.Interfaces;
 using DataAccess.Repositories;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
@@ -19,12 +19,23 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:63344") 
-            .AllowAnyMethod() 
+        policy.SetIsOriginAllowed(_ => true)
+            .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials();
     });
 });
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(options =>
+    {
+        options.Authority = "AuthServer";
+        options.Audience = "Audience";
+        options.RequireHttpsMetadata = false;
+    });
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -66,13 +77,17 @@ builder.Services.AddDbContext<DbContext>(
     options => options.UseNpgsql(connectionString));
 
 var app = builder.Build();
-app.UseMiddleware<AuthGuardMiddleware>();
 app.UseCors("AllowAll");
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseMiddleware<AuthGuardMiddleware>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    
 }
 
 app.MapControllers();

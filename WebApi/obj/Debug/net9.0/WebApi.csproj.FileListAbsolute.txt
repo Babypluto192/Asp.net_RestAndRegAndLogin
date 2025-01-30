@@ -143,3 +143,7 @@ C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\System.Ident
 C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\Scrutor.dll
 C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\User\RiderProjects\WebApplication2\WebApi\obj\Debug\net9.0\WebApi.sourcelink.json
+C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\RiderProjects\WebApplication2\WebApi\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -12,3 +12,4 @@ C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\refint\D
 C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.pdb
 C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.genruntimeconfig.cache
 C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\ref\DataAccess.dll
+C:\Users\User\RiderProjects\WebApplication2\DataAccess\obj\Debug\net9.0\DataAccess.sourcelink.json
